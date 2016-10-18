@@ -76,8 +76,8 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 /* Multisitio */
-/*define( 'WP_ALLOW_MULTISITE', true );
-define('MULTISITE', true);
+define( 'WP_ALLOW_MULTISITE', true );
+/*define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'entawebpublic.azurewebsites.net');
 define('PATH_CURRENT_SITE', '/');
