@@ -58,7 +58,7 @@ define('NONCE_SALT',       'MAd$F@Q:UG!]rkl}/*~6Z$sTQwEs/NN8_P}1,upZT-Fwbx {d0=1
  * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
  * Emplea solo números, letras y guión bajo.
  */
-$table_prefix  = 'enta_';
+$table_prefix  = 'public_';
 
 /**
  * Para desarrolladores: modo debug de WordPress.
@@ -74,3 +74,12 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/* Multisitio */
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'entawebpublic.azurewebsites.net');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
